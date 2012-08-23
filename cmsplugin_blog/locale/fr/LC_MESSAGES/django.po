@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+#   <bruno.clermont@gmail.com>, 2011.
+#   <greg@dealguru.ch>, 2012
+msgid ""
+msgstr ""
+"Project-Id-Version: cmsplugin-blog\n"
+"Report-Msgid-Bugs-To: http://github.com/fivethreeo/cmsplugin-blog/issues\n"
+"POT-Creation-Date: 2011-08-12 11:23+0200\n"
+"PO-Revision-Date: 2012-08-23 11:30+0000\n"
+"Last-Translator: Gregory Favre <greg@dealguru.ch>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: admin.py:110 models.py:91
+msgid "author"
+msgstr "auteur"
+
+#: admin.py:115 models.py:89
+msgid "title"
+msgstr "titre"
+
+#: cms_app.py:6
+msgid "Blog Apphook"
+msgstr "Application de blog"
+
+#: cms_plugins.py:12 templates/cmsplugin_blog/entry_archive.html:5
+msgid "Latest entries"
+msgstr "Derniers articles"
+
+#: feeds.py:45 feeds.py:56
+#, python-format
+msgid "%(site)s blog entries"
+msgstr "Articles de %(site)s"
+
+#: feeds.py:46 feeds.py:57
+#, python-format
+msgid "%(site)s blog entries in %(lang)s"
+msgstr "Articles de %(site)s en %(lang)s"
+
+#: feeds.py:85
+#, python-format
+msgid "%(title)s tagged \"%(tag)s\""
+msgstr "%(title)s dans la catégorie \"%(tag)s\""
+
+#: feeds.py:97
+#, python-format
+msgid "%(description)s tagged \"%(tag)s\""
+msgstr "%(description)s dans la catégorie \"%(tag)s\""
+
+#: feeds.py:114
+#, python-format
+msgid "%(title)s by %(author)s"
+msgstr "%(title)s par \"%(author)s\""
+
+#: feeds.py:126
+#, python-format
+msgid "%(description)s by %(author)s"
+msgstr "%(description)s par \"%(author)s\""
+
+#: models.py:40
+msgid "is published"
+msgstr "est publié"
+
+#: models.py:41
+msgid "publish at"
+msgstr "publié le"
+
+#: models.py:80 models.py:87
+msgid "entry"
+msgstr "article"
+
+#: models.py:81
+msgid "entries"
+msgstr "articles"
+
+#: models.py:88
+msgid "language"
+msgstr "langue"
+
+#: models.py:90
+msgid "slug"
+msgstr "slug"
+
+#: models.py:107
+msgid "entry title"
+msgstr "titre de l'article"
+
+#: models.py:108
+msgid "entry titles"
+msgstr "titres de l'article"
+
+#: models.py:114
+msgid "Number of entries items to show"
+msgstr "Number d'articles à afficher"
+
+#: models.py:115
+msgid "Limits the number of items that will be displayed"
+msgstr "Limite le nombre d'articles qui seront affichés"
+
+#: models.py:117
+msgid "Only show entries for the current language"
+msgstr "N'afficher que les articles pour le language courant"
+
+#: templates/cmsplugin_blog/author_links_snippet.html:3
+msgid "See entries by"
+msgstr "Afficher les articles de"
+
+#: templates/cmsplugin_blog/entry_archive.html:14
+#: templates/cmsplugin_blog/latest_entries.html:7
+msgid "No entries"
+msgstr "Aucun article"
+
+#: templates/cmsplugin_blog/entry_archive_day.html:6
+#: templates/cmsplugin_blog/entry_archive_month.html:6
+#: templates/cmsplugin_blog/entry_archive_year.html:7
+msgid "Entries for"
+msgstr "Articles de"
+
+#: templates/cmsplugin_blog/entry_archive_day.html:14
+msgid "No entries for this day"
+msgstr "Aucun article de ce jour"
+
+#: templates/cmsplugin_blog/entry_archive_month.html:13
+msgid "No entries for this month"
+msgstr "Aucun article durant ce mois"
+
+#: templates/cmsplugin_blog/entry_archive_year.html:12
+msgid "No entries for this year"
+msgstr "Aucun article durant cette année"
+
+#: templates/cmsplugin_blog/entry_author_list.html:11
+msgid "Entries by"
+msgstr "Articles de"
+
+#: templates/cmsplugin_blog/entry_author_list.html:20
+msgid "No entries by"
+msgstr "Aucun article de"
+
+#: templates/cmsplugin_blog/entry_list.html:11
+msgid "Entries tagged"
+msgstr "Articles de la catégorie"
+
+#: templates/cmsplugin_blog/entry_list.html:20
+msgid "No entries tagged"
+msgstr "Aucun article dans cette catégorie"
+
+#: templates/cmsplugin_blog/month_links_snippet.html:3
+msgid "See entries for"
+msgstr "Afficher les articles de"
+
+#: templates/cmsplugin_blog/tag_links_snippet.html:3
+msgid "See entries tagged"
+msgstr "Afficher les articles de cette catégorie"
