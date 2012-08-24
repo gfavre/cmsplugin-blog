@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cmsplugin-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-12 11:23+0200\n"
+"POT-Creation-Date: 2012-08-24 17:21+0200\n"
 "PO-Revision-Date: 2011-05-18 14:18+0000\n"
 "Last-Translator: fivethreeo <oyvind.saltvik@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Language: nb\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: admin.py:110 models.py:91
+#: admin.py:111 models.py:100
 msgid "author"
 msgstr "forfatter"
 
-#: admin.py:115 models.py:89
+#: admin.py:116 models.py:98
 #, fuzzy
 msgid "title"
 msgstr "Tittel"
@@ -30,35 +30,37 @@ msgstr "Tittel"
 msgid "Blog Apphook"
 msgstr "Blogg Applikasjon"
 
-#: cms_plugins.py:12 templates/cmsplugin_blog/entry_archive.html:5
+#: cms_plugins.py:19 templates/cmsplugin_blog/entry_archive.html:7
 msgid "Latest entries"
 msgstr "Siste innlegg"
 
-#: feeds.py:45 feeds.py:56
+#: feeds.py:35 feeds.py:46
 #, fuzzy, python-format
 msgid "%(site)s blog entries"
 msgstr "Blogginlegg"
 
-#: feeds.py:46 feeds.py:57
+#: feeds.py:36 feeds.py:47
 #, fuzzy, python-format
 msgid "%(site)s blog entries in %(lang)s"
 msgstr "Bloginnlegg på %s"
 
-#: feeds.py:85
+#: feeds.py:76
 #, python-format
 msgid "%(title)s tagged \"%(tag)s\""
 msgstr "%(title)s tagget med \"%(tag)s\""
 
-#: feeds.py:97
+#: feeds.py:88
 #, python-format
 msgid "%(description)s tagged \"%(tag)s\""
 msgstr "%(description)s tagget med \"%(tag)s\""
 
-#: feeds.py:114
+#: feeds.py:105
+#, python-format
 msgid "%(title)s by %(author)s"
 msgstr "%(title)s av %(author)s"
 
-#: feeds.py:126
+#: feeds.py:117
+#, python-format
 msgid "%(description)s by %(author)s"
 msgstr "%(description)s av %(author)s"
 
@@ -70,83 +72,90 @@ msgstr "er publisert"
 msgid "publish at"
 msgstr "publisert når"
 
-#: models.py:80 models.py:87
+#: models.py:86 models.py:96
 msgid "entry"
 msgstr "innlegg"
 
-#: models.py:81
+#: models.py:87
 msgid "entries"
 msgstr "innlegg"
 
-#: models.py:88
+#: models.py:97
 msgid "language"
 msgstr "Språk"
 
-#: models.py:90
+#: models.py:99
 msgid "slug"
 msgstr "Pen adressse"
 
-#: models.py:108
+#: models.py:122
 msgid "blogentry"
 msgstr "innlegg"
 
-#: models.py:109
+#: models.py:123
 msgid "blogentries"
 msgstr "Blogginlegg"
 
-#: models.py:115
+#: models.py:130
 msgid "Number of entries items to show"
 msgstr "Antall innlegg som skal vises"
 
-#: models.py:116
+#: models.py:131
 msgid "Limits the number of items that will be displayed"
 msgstr "Begrenser antall innlegg som vil bli vist"
 
-#: models.py:118
+#: models.py:133
 msgid "Only show entries for the current language"
 msgstr "Bare vis innlegg for aktivt språk"
+
+#: views.py:43
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
 
 #: templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
 msgstr "Se innlegg av"
 
-#: templates/cmsplugin_blog/entry_archive.html:17
-#: templates/cmsplugin_blog/latest_entries.html:13
+#: templates/cmsplugin_blog/entry_archive.html:13
+#: templates/cmsplugin_blog/latest_entries.html:5
 msgid "No entries"
 msgstr "Ingen innlegg"
 
-#: templates/cmsplugin_blog/entry_archive_day.html:6
-#: templates/cmsplugin_blog/entry_archive_month.html:6
-#: templates/cmsplugin_blog/entry_archive_year.html:7
+#: templates/cmsplugin_blog/entry_archive_day.html:7
+#: templates/cmsplugin_blog/entry_archive_month.html:7
+#: templates/cmsplugin_blog/entry_archive_year.html:8
 msgid "Entries for"
 msgstr "Innlegg for"
 
-#: templates/cmsplugin_blog/entry_archive_day.html:17
+#: templates/cmsplugin_blog/entry_archive_day.html:12
 msgid "No entries for this day"
 msgstr "Ingen innlegg for denne dagen"
 
-#: templates/cmsplugin_blog/entry_archive_month.html:18
+#: templates/cmsplugin_blog/entry_archive_month.html:12
 msgid "No entries for this month"
 msgstr "Ingen innlegg for denne måneden"
 
-#: templates/cmsplugin_blog/entry_archive_year.html:12
+#: templates/cmsplugin_blog/entry_archive_year.html:13
 msgid "No entries for this year"
 msgstr "Ingen innlegg for dette året"
 
-#: templates/cmsplugin_blog/entry_author_list.html:11
+#: templates/cmsplugin_blog/entry_author_list.html:13
 msgid "Entries by"
 msgstr "Innlegg for"
 
-#: templates/cmsplugin_blog/entry_author_list.html:23
+#: templates/cmsplugin_blog/entry_author_list.html:18
 #, fuzzy
 msgid "No entries by"
 msgstr "Ingen bloginnlegg av"
 
-#: templates/cmsplugin_blog/entry_list.html:11
+#: templates/cmsplugin_blog/entry_list.html:13
 msgid "Entries tagged"
 msgstr "Bloginnlegg tagget"
 
-#: templates/cmsplugin_blog/entry_list.html:23
+#: templates/cmsplugin_blog/entry_list.html:18
 msgid "No entries tagged"
 msgstr "Ingen innlegg tagget"
 

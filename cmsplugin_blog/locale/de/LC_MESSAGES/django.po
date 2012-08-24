@@ -7,21 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cmsplugin-blog\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-07-28 21:47+0200\n"
+"POT-Creation-Date: 2012-08-24 17:21+0200\n"
 "PO-Revision-Date: 2011-05-19 14:42+0000\n"
 "Last-Translator: raphaa <webmaster@raphaa.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: admin.py:110 models.py:91
+#: admin.py:111 models.py:100
 msgid "author"
 msgstr "Autor"
 
-#: admin.py:115 models.py:89
+#: admin.py:116 models.py:98
 msgid "title"
 msgstr "Titel"
 
@@ -29,36 +29,36 @@ msgstr "Titel"
 msgid "Blog Apphook"
 msgstr "Blog-Applikation"
 
-#: cms_plugins.py:12 templates/cmsplugin_blog/entry_archive.html:5
+#: cms_plugins.py:19 templates/cmsplugin_blog/entry_archive.html:7
 msgid "Latest entries"
 msgstr "Die neuesten Einträge"
 
-#: feeds.py:45 feeds.py:56
+#: feeds.py:35 feeds.py:46
 #, python-format
 msgid "%(site)s blog entries"
 msgstr "%(site)s Blog-Einträge"
 
-#: feeds.py:46 feeds.py:57
+#: feeds.py:36 feeds.py:47
 #, python-format
 msgid "%(site)s blog entries in %(lang)s"
 msgstr "%(site)s Blog-Einträge in %(lang)s"
 
-#: feeds.py:85
+#: feeds.py:76
 #, python-format
 msgid "%(title)s tagged \"%(tag)s\""
 msgstr "%(title)s markiert \"%(tag)s\""
 
-#: feeds.py:97
+#: feeds.py:88
 #, python-format
 msgid "%(description)s tagged \"%(tag)s\""
 msgstr "%(description)s markiert \"%(tag)s\""
 
-#: feeds.py:114
+#: feeds.py:105
 #, python-format
 msgid "%(title)s by %(author)s"
 msgstr "%(title)s von \"%(author)s\""
 
-#: feeds.py:126
+#: feeds.py:117
 #, python-format
 msgid "%(description)s by %(author)s"
 msgstr "%(description)s by \"%(author)s\""
@@ -71,82 +71,91 @@ msgstr "Veröffentlicht"
 msgid "publish at"
 msgstr "Veröffentlicht am"
 
-#: models.py:80 models.py:87
+#: models.py:86 models.py:96
 msgid "entry"
 msgstr "Eintrag"
 
-#: models.py:81
+#: models.py:87
 msgid "entries"
 msgstr "Einträge"
 
-#: models.py:88
+#: models.py:97
 msgid "language"
 msgstr "Sprache"
 
-#: models.py:90
+#: models.py:99
 msgid "slug"
 msgstr "Slug"
 
-#: models.py:107
-msgid "entry title"
-msgstr "Eintragtitel"
+#: models.py:122
+#, fuzzy
+msgid "blogentry"
+msgstr "Eintrag"
 
-#: models.py:108
-msgid "entry titles"
-msgstr "Eintragtitel"
+#: models.py:123
+#, fuzzy
+msgid "blogentries"
+msgstr "Einträge"
 
-#: models.py:114
+#: models.py:130
 msgid "Number of entries items to show"
 msgstr "Anzahl der angezeigten Einträge"
 
-#: models.py:115
+#: models.py:131
 msgid "Limits the number of items that will be displayed"
 msgstr "Maximale Anzahl an Elemente, die angezeigt werden sollen"
 
-#: models.py:117
+#: models.py:133
 msgid "Only show entries for the current language"
 msgstr "Nur Einträge für die aktuelle Sprache anzeigen"
+
+#: views.py:43
+#, python-format
+msgid ""
+"Future %(verbose_name_plural)s not available because %(class_name)s."
+"allow_future is False."
+msgstr ""
 
 #: templates/cmsplugin_blog/author_links_snippet.html:3
 msgid "See entries by"
 msgstr "Einträge von"
 
-#: templates/cmsplugin_blog/entry_archive.html:14
-#: templates/cmsplugin_blog/latest_entries.html:7
+#: templates/cmsplugin_blog/entry_archive.html:13
+#: templates/cmsplugin_blog/latest_entries.html:5
 msgid "No entries"
 msgstr "Keine Einträge"
 
-#: templates/cmsplugin_blog/entry_archive_day.html:6
-#: templates/cmsplugin_blog/entry_archive_month.html:6
-#: templates/cmsplugin_blog/entry_archive_year.html:7
+#: templates/cmsplugin_blog/entry_archive_day.html:7
+#: templates/cmsplugin_blog/entry_archive_month.html:7
+#: templates/cmsplugin_blog/entry_archive_year.html:8
 msgid "Entries for"
 msgstr "Einträge für"
 
-#: templates/cmsplugin_blog/entry_archive_day.html:14
+#: templates/cmsplugin_blog/entry_archive_day.html:12
 msgid "No entries for this day"
 msgstr "Keine Einträge für diesen Tag"
 
-#: templates/cmsplugin_blog/entry_archive_month.html:13
+#: templates/cmsplugin_blog/entry_archive_month.html:12
 msgid "No entries for this month"
 msgstr "Keine Einträge für diesen Monat"
 
-#: templates/cmsplugin_blog/entry_archive_year.html:12
+#: templates/cmsplugin_blog/entry_archive_year.html:13
 msgid "No entries for this year"
 msgstr "Keine Einträge für dieses Jahr"
 
-#: templates/cmsplugin_blog/entry_author_list.html:11
+#: templates/cmsplugin_blog/entry_author_list.html:13
 msgid "Entries by"
 msgstr "Einträge von"
 
-#: templates/cmsplugin_blog/entry_author_list.html:20
+#: templates/cmsplugin_blog/entry_author_list.html:18
 msgid "No entries by"
 msgstr "Keine Einträge von"
 
-#: templates/cmsplugin_blog/entry_list.html:11
+#: templates/cmsplugin_blog/entry_list.html:13
 msgid "Entries tagged"
 msgstr "Markierte Einträge"
 
-#: templates/cmsplugin_blog/entry_list.html:20
+#: templates/cmsplugin_blog/entry_list.html:18
 msgid "No entries tagged"
 msgstr "Keine Einträge markiert"
 
@@ -157,3 +166,9 @@ msgstr "Einträge für"
 #: templates/cmsplugin_blog/tag_links_snippet.html:3
 msgid "See entries tagged"
 msgstr "Markierte Einträge"
+
+#~ msgid "entry title"
+#~ msgstr "Eintragtitel"
+
+#~ msgid "entry titles"
+#~ msgstr "Eintragtitel"
